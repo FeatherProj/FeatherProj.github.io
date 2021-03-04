@@ -33,17 +33,17 @@
             <a href="https://ahroonsparadise.github.io/" class="brand-logo"><img src="icon_new.png" width="120" style="margin-top: 10px;"></a>
             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="" onclick="pageNotAvailable()"><i class="material-icons left">view_list</i> Server List</a></li>
+                <li><a class="modal-trigger" href="#err01"><i class="material-icons left">view_list</i> Server List</a></li>
                 <li><a href="https://ahroonsparadise.github.io/rules/"><i class="material-icons left">book</i> Rules</a></li>
-                <li><a href="" onclick="pageNotAvailable()"><i class="material-icons left">question_answer</i> Forums</a></li>
+                <li><a class="modal-trigger" href="#err01"><i class="material-icons left">question_answer</i> Forums</a></li>
                 <li><a href="https://www.patreon.com/mysticmoonlight"><i class="material-icons left">attach_money</i> Donate</a></li>
             </ul>
         </div>
     </nav>
     <ul class="sidenav" id="nav-mobile">
-        <li><a href="" onclick="pageNotAvailable()"><i class="material-icons left">view_list</i> Server List</a></li>
+        <li><a class="modal-trigger" href="#err01"><i class="material-icons left">view_list</i> Server List</a></li>
         <li><a href="https://ahroonsparadise.github.io/rules/"><i class="material-icons left">book</i> Rules</a></li>
-        <li><a href="" onclick="pageNotAvailable()"><i class="material-icons left">question_answer</i> Forums</a></li>
+        <li><a class="modal-trigger" href="#err01"><i class="material-icons left">question_answer</i> Forums</a></li>
         <li><a href="https://www.patreon.com/mysticmoonlight"><i class="material-icons left">attach_money</i> Donate</a></li>
     </ul>
     <div class="container-fluid pink" style="margin-bottom: 100px;">
@@ -81,6 +81,16 @@
                 </div>
             </div>
         </div>
+        <!-- Modal Structure -->
+        <div id="err01" class="modal">
+            <div class="modal-content">
+                <h4>Sorry!</h4>
+                <p>This page is under construction. Please come back later!</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-red btn-flat">Close</a>
+            </div>
+        </div>
         <footer class="page-footer pink">
             <div class="container">
                 <div class="row">
@@ -102,8 +112,8 @@
                     <div class="col l3 s12">
                         <h5 class="white-text">Community</h5>
                         <ul>
-                            <li><a class="white-text" href="" onclick="pageNotAvailable()"><i class="fas fa-server"></i> Server List</a></li>
-                            <li><a class="white-text" href="" onclick="pageNotAvailable()"><i class="fas fa-globe"></i> Forum</a></li>
+                            <li><a class="white-text modal-trigger" href="#err01"><i class="fas fa-server"></i> Server List</a></li>
+                            <li><a class="white-text modal-trigger" href="#err01"><i class="fas fa-globe"></i> Forum</a></li>
                             <li><a class="white-text" href="https://github.com/AhRoonsParadise" target="_blank"><i class="fas fa-box"></i> Repository</a></li>
                             <li><a class="white-text" href="https://github.com/AhRoonsParadise/Issue-Tracker" target="_blank"><i class="fas fa-exclamation-triangle"></i> Issue Tracker</a></li>
                             <li><a class="white-text" href="https://www.patreon.com/mysticmoonlight" target="_blank"><i class="fas fa-donate"></i> Donate us</a></li>
