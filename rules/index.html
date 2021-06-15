@@ -9,7 +9,7 @@
 
     <!-- Load Stylesheet -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@1.1.0-alpha/dist/css/materialize.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/StarlightParadise/StarlightParadise.github.io/master/favicon.png" />
@@ -17,25 +17,25 @@
     <!-- Custom embed for Discord -->
     <meta content="Rules - Starlight Paradise" property="og:title">
     <meta content="Starlight Paradise is the collection of several gameserver project which aims to focus on gameplay and user-friendly experience." property="og:description">
-    <meta content="https://raw.githubusercontent.com/StarlightParadise/StarlightParadise.github.io/master/banner2.png" property="og:image">
+    <meta content="https://raw.githubusercontent.com/StarlightParadise/StarlightParadise.github.io/master/favicon.png" property="og:image">
     <meta content="#58608C" data-react-helmet="true" name="theme-color">
 
     <!-- Execute Script after end of load -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js "></script>
-    <script src="../materialize.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js "></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@1.1.0-alpha/dist/js/materialize.min.js"></script>
+    <script defer src="../materialize.js"></script>
 </head>
 
 <body>
     <nav>
-        <div class="nav-wrapper color-starlight">
-            <a href="https://starlightparadise.github.io/" class="brand-logo"><img src="../logo.png" width="50" class="navbar-logo"></a>
+        <div class="nav-wrapper indigo darken-1">
+            <a href="https://starlightparadise.github.io/" class="brand-logo"><img src="../logo.svg" width="50" class="navbar-logo"></a>
             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a class="modal-trigger" href="#err01"><i class="material-icons left">view_list</i> Server List</a></li>
                 <li><a href="https://starlightparadise.github.io/rules/"><i class="material-icons left">book</i> Rules</a></li>
                 <li><a class="modal-trigger" href="#err01"><i class="material-icons left">question_answer</i> Forums</a></li>
-                <li><a class="modal-trigger" href="#donate"><i class="material-icons left">attach_money</i> Donate</a></li>
+                
             </ul>
         </div>
     </nav>
@@ -43,69 +43,61 @@
         <li><a class="modal-trigger" href="#err01"><i class="material-icons left">view_list</i> Server List</a></li>
         <li><a href="https://starlightparadise.github.io/rules/"><i class="material-icons left">book</i> Rules</a></li>
         <li><a class="modal-trigger" href="#err01"><i class="material-icons left">question_answer</i> Forums</a></li>
-        <li><a class="modal-trigger" href="#donate"><i class="material-icons left">attach_money</i> Donate</a></li>
+        
     </ul>
-    <div class="container-fluid title-banner color-starlight" style="margin-bottom: 100px;">
+    <div class="container-fluid title-banner indigo darken-1" style="margin-bottom: 100px;">
         <h1 class="title">Community Rules</h1>
         <h5 class="subtitle">Things to follow when you use our services (Last updated on March 4, 2021)</h5>
     </div>
 
     <div class="container-fluid white ">
         <div id="descSection" style="margin-top: 100px;">
-            <h5 style="border-bottom: 1px solid grey;"><i class="fas fa-globe "></i> General Rules</h5>
+            <h5><i class="fas fa-globe "></i> General Rules</h5>
+            <hr />
             <p>This applies to all Mystic Moonlight services.</p>
             <ol>
-                <li>Be nice and respectful to other users! Any toxic behaviors such as harassment, rudeness, racism are not tolerated.</li>
-                <li>Do not spam.<a class="modal-trigger" href="#foot1">[1]</a></li>
-                <li>Advertising other website or community which is not related to Ah_Roon and Mystic Moonlight are prohibited.</li>
-                <li>Respect your/other's privacy. Never give your/other's personal information to anyone.</li>
-                <li>NSFW or offensive contents are forbidden. This includes anything you upload to community.<a class="modal-trigger" href="#foot2">[2]</a></li>
-                <li>Do not abuse our support system such as Tickets, CallAdmin, ModMail and so on.</li>
-                <li>Please refrain from making non-existent rules.</li>
-                <li>Any scam attempts or unapproved transactions are not allowed. This includes trying to scam other's account, selling account that does not belong to you, etc.</li>
-                <li>Using alternative account to bypass bans are strictly not allowed. All associated account will be permanently banned.</li>
-                <li>Talking about piracy content that is not genuiue products are forbidden. We do not support piracy content and never will.</li>
-                <li>Stop excessively being nitpicky. If you have criticism, please tell them politely.</li>
-		<li>Evading bans are strictly forbidden and any related account(Your main account and any associated alt accounts) will be banned permanently.</li>
+                <li>Be nice to other members! Any toxic behaviors such as harassment, rudeness, racism are not tolerated.</li>
+                <li>Do not spam!<a class="modal-trigger" href="#foot1">[1]</a></li>
+                <li>Advertising other website or community which is not related to Ah_Roon and Mystic Moonlight are prohibited!</li>
+                <li>Respect your/other's privacy. Never give your/other's personal information to anyone!</li>
+                <li>Any NSFW or offensive contents are not allowed. This is not a place to discuss about NSFW!<a class="modal-trigger" href="#foot2">[2]</a></li>
+                <li>Do not abuse our support system such as Tickets, CallAdmin, ModMail and so on!</li>
+                <li>Please refrain from making non-existent rules. We do not want community be strict!</li>
+                <li>Any scam attempts or unapproved transactions are not allowed! This includes trying to scam other's account, selling account that does not belong to you, etc.</li>
+                <li>Using alternative account to bypass bans are strictly not allowed! All associated account will be permanently banned from this community.</li>
+                <li>Talking about piracy content that is not genuiue products are forbidden! We do not support piracy content and never will.</li>
+                <li>Be nice, do not be nitpicky! If you have criticism, please tell them politely.</li>
             </ol>
         </div>
         <div id="descSection" style="margin-top: 50px;">
-            <h5 style="border-bottom: 1px solid grey;"><i class="fas fa-gamepad "></i> In-Game Rules</h5>
+            <h5><i class="fas fa-gamepad "></i> In-Game Rules</h5>
+            <hr />
             <p>These rules only apply on Starlight Paradise in-game server.</p>
             <ol>
-                <li>You are not allowed to abuse vote system. This includes votekicking the person without any valid reason.</li>
-                <li>Some gamemodes might have own specific rules. Gamemode Rules can be read <a href="https://starlightparadise.github.io/rules/gamemode/ ">here</a>.</li>
+                <li>You are not allowed to abuse vote system! This includes votekicking the person without any valid reason.</li>
+                <li>Some gamemodes might have own specific rules. Gamemode Rules can be read <a href="https://starlightparadise.github.io/rules/gamemode/ ">here</a>!</li>
                 <li>Gamemode Rules has more priority than other rules.</li>
-                <li>You may not abuse in-game bug, glitch or exploits. Instead report them to any staff member.</li>
-                <li>Do not use unauthorized third-party clients or mods which gains unfair advantage than other players.</li>
+                <li>You may not abuse in-game bug, glitch or exploits! Instead report them to any staff member.</li>
+                <li>Do not use any of third-party clients or mods which gives you unfair advantage! This includes using cheat clients in-game.</li>
             </ol>
         </div>
         <div id="descSection" style="margin-top: 50px;">
-            <h5 style="border-bottom: 1px solid grey;"><i class="fab fa-discord "></i> Discord Rules</h5>
+            <h5><i class="fab fa-discord "></i> Discord Rules</h5>
+            <hr />
             <p>These rules only apply on our discord server.</p>
             <ol>
-                <li>Follow the Discord Terms of Services and Community Guidelines. Any message which breaks Discord ToS will be removed immediately without warning.</li>
+                <li>Follow the Discord Terms of Services and Community Guidelines. Any message which breaks Discord ToS will be removed immediately without warning!</li>
                 <li>You need to be at least 13 years old to join our discord server as mentioned in the Terms of Services.</li>
-                <li>Do not <code>@mention</code> other person without valid reason.</li>
+                <li>Do not <code>@mention</code> other person without valid reason!</li>
                 <li>Post your message on right channel! Read the pinned post, channel info for more information about the current channel.</li>
-                <li>The serious topics such as drama, and real life incidents can only be posted on #serious-chat to keep chat atmosphere positive.</li>
-            </ol>
-        </div>
-        <div id="descSection" style="margin-top: 50px;">
-            <h5 style="border-bottom: 1px solid grey;"><i class="fas fa-exclamation-triangle "></i> Restrictions</h5>
-            <ol>
-                <li>You will receive warning if you break the rules for first time, if you already have previous warning for same reason in the past, you will receive restriction such as ban, mute, gag. (e.g. Trolling = Ban, Chat or Voice offense = Gag or
-                    mute)
-                </li>
-                <li>Permanent mute, ban, gag can be given if offense is severe at moderator's discretion. (Such as cheating in-game, ban evasion, scam attempts, etc.)</li>
-                <li>You may appeal your false restriction on our Discord by creating ticket, or using the ModMail. Make sure you include more details about your false warnings and provide evidence if needed.<a class="modal-trigger" href="#foot3">[3]</a></li>
+                <li>The serious topics such as drama, and real life incidents can only be posted on <code>#serious-chat</code> to keep chat atmosphere positive!</li>
             </ol>
         </div>
         <div id="descSection" style="margin-top: 50px; padding-bottom: 20px;">
-            <h5 style="border-bottom: 1px solid grey;"><i class="fas fa-book "></i> Note</h5>
+            <h5><i class="fas fa-book "></i> Note</h5>
+            <hr />
             <ol>
                 <li>The following rules can be changed at any time with notice.</li>
-                <li>You may receive restriction for obstructing the use of the community or doing a clear and malicious act.</li>
             </ol>
         </div>
         <!-- Modal Structure -->
@@ -143,20 +135,8 @@
                 <a href="#!" class="modal-close waves-effect waves-red btn-flat">Close</a>
             </div>
         </div>
-        <div id="donate" class="modal">
-            <div class="modal-content">
-                <h4>Support us</h4>
-                <p>Starlight Paradise project costs money. We need to pay for every infrastructures such as website domain, server, and more.</p>
-                <p>Please consider supporting us for future projects and keep this project alive by making a donation!</p>
-                <p>Here is the link to donation page:</p>
-                <p><a href="https://patreon.com/mysticmoonlight">Patreon (Monthly)</a></p>
-                <p><a href="https://paypal.me/ahroon">PayPal.me (One Time)</a></p>
-            </div>
-            <div class="modal-footer">
-                <a href="#!" class="modal-close waves-effect waves-red btn-flat">Close</a>
-            </div>
-        </div>
-        <footer class="page-footer color-starlight">
+        
+        <footer class="page-footer indigo darken-1">
             <div class="container">
                 <div class="row">
                     <div class="col l4 s12">
@@ -172,6 +152,7 @@
                             <li><a class="white-text" href="https://github.com/MysticMoonlight" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
                             <li><a class="white-text" href="https://twitter.com/StudioMMForever" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
                             <li><a class="white-text" href="https://discord.gg/mFZsKS2" target="_blank"><i class="fab fa-discord"></i> Discord</a></li>
+                            <li><a class="white-text" href="https://www.patreon.com/mysticmoonlight" target="_blank"><i class="fab fa-patreon"></i> Patreon</a></li>
                         </ul>
                     </div>
                     <div class="col l3 s12">
@@ -181,7 +162,7 @@
                             <li><a class="white-text modal-trigger" href="#err01"><i class="fas fa-globe"></i> Forum</a></li>
                             <li><a class="white-text" href="https://github.com/AhRoonsParadise" target="_blank"><i class="fas fa-box"></i> Repository</a></li>
                             <li><a class="white-text" href="https://github.com/AhRoonsParadise/Issue-Tracker" target="_blank"><i class="fas fa-exclamation-triangle"></i> Issue Tracker</a></li>
-                            <li><a class="white-text" class="modal-trigger" href="#donate" target="_blank"><i class="fas fa-donate"></i> Support us</a></li>
+                            
                         </ul>
                     </div>
                     <div class="col l2 s12">
@@ -194,7 +175,7 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-copyright color-starlight">
+            <div class="footer-copyright indigo darken-3">
                 <div class="container">
                     Copyright ©
                     <a href="https://mysticmoonlight.home.blog/"> Mystic Moonlight</a>
