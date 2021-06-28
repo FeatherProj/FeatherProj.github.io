@@ -22,8 +22,12 @@ body {
     padding-bottom: 100px;
 }
 
-.light-font {
-    font-weight: 300;
+.bold-text {
+    font-weight: 700;
+}
+
+.semibold-text {
+    font-weight: 500;
 }
 
 #descSection {
@@ -36,6 +40,7 @@ body {
     text-align:center;
     margin-top: 1px; 
     color: white;
+    font-weight: 700;
 }
 
 .subtitle {
