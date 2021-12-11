@@ -5,137 +5,64 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
 
     <!-- Title -->
-    <title>Home - The Feather Project</title>
+    <title>Home - Last Chain</title>
     
     <!-- Load Stylesheet -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@1.1.0-alpha/dist/css/materialize.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/FeatherProj/featherproj.github.io/master/favicon.png" />
-    
-    <!-- Custom embed for Discord -->
-    <meta content="The Feather Project" property="og:title">
-    <meta content="The Feather Project is the collection of game server projects which aims for best lightweight gameplay experience." property="og:description">
-    <meta content="https://raw.githubusercontent.com/FeatherProj/featherproj.github.io/master/seo.png" property="og:image">
-    <meta content="#1E88E5" data-react-helmet="true" name="theme-color">
+    <link rel="stylesheet" href="fonts.css">
 
-    <!-- Execute Script after end of load -->
-    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js "></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@1.1.0-alpha/dist/js/materialize.min.js"></script>
-    <script defer src="materialize.js"></script>
+    <!-- Load all custom javascripts  -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Add favicon -->
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/TheLastChain/TheLastChain.github.io/master/favicon.png" />
+
+    <!-- Metadata -->
+    <meta name="application-name" content="Home - Last Chain">
+    <meta name="description" content="Last Chain is community-operated game server project aims for better Co-op/PvE experiences.">
+    
+    <!-- Metadata for Discord -->
+    <meta content="Last Chain" property="og:title">
+    <meta content="Last Chain is community-operated game server project aims for better Co-op/PvE experiences." property="og:description">
+    <meta content="https://raw.githubusercontent.com/TheLastChain/TheLastChain.github.io/master/seo.png" property="og:image">
 </head>
 
-<body>
-    <nav>
-        <div class="nav-wrapper blue darken-1">
-            <a href="https://featherproj.github.io/" class="brand-logo"><img src="logo.svg" width="50" class="navbar-logo"></a>
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="https://featherproj.github.io/blog/1"><i class="material-icons left">announcement</i> Blog</a></li>
-                <li><a href="https://featherproj.github.io/servers"><i class="material-icons left">view_list</i> Server List</a></li>
-                <li><a href="https://featherproj.github.io/rules/"><i class="material-icons left">book</i> Rules</a></li>
-                <li><a href="https://featherproj.github.io/faq/"><i class="material-icons left">info</i> FAQ</a></li>
-                <li><a class="disabled" href="#"><i class="material-icons left">forum</i> Forums</a></li>
-                
-            </ul>
+<body class="bg-black">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.svg" alt="" width="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navCollapse">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="info/"><i data-feather="info"></i> Info</a>
+                    <a class="nav-link disabled" href=""><i data-feather="server"></i> Server List</a>
+                    <a class="nav-link" href="https://ko-fi.com/mysticmoonlight" target="_blank"><i data-feather="coffee"></i> Buy us a coffee</a>
+                </div>
+            </div>
         </div>
     </nav>
-    <ul class="sidenav" id="nav-mobile">
-        <li><a href="https://featherproj.github.io/blog/1"><i class="material-icons left">announcement</i> Blog</a></li>
-                <li><a href="https://featherproj.github.io/servers"><i class="material-icons left">view_list</i> Server List</a></li>
-                <li><a href="https://featherproj.github.io/rules/"><i class="material-icons left">book</i> Rules</a></li>
-                <li><a href="https://featherproj.github.io/faq/"><i class="material-icons left">info</i> FAQ</a></li>
-                <li><a class="disabled" href="#"><i class="material-icons left">forum</i> Forums</a></li>
-        
-    </ul>
-    <div class="container-fluid main-banner blue darken-1">
-        <p style="text-align:center; margin-top: 0px;"><img src="banner.svg " style="width: 60%; height: auto;"></p>
-        <h1 class="title">Welcome to The Feather Project.</h1>
-        <h5 class="subtitle">The Feather Project is the collection of game server projects which aims to focus on best lightweight gameplay experience.</h5>
+    <div class="container-fluid bg-black">
+        <p class="banner floating"><img src="banner.svg" class="floating" style="width: 60%; height: auto;"></p>
+        <h1 class="text-white title">Only our last chain can save the world.</h1>
     </div>
-
-    <div class="container-fluid white">
-
-        <div class="row mainarea" style="margin-top: 100px; margin-bottom: 200px;">
-            <div class="col s12 m4 ">
-                <div class="icon-block ">
-                    <h2 class="center blue-text darken-3 "><i class="fas fa-money-bill-alt "></i></h2>
-                    <h5 class="center bold-text">Free for everyone</h5>
-
-                    <p class="light ">Tired of donating for features on Community Server? We provide every server features for free, while making donations optional.</p>
-                </div>
-            </div>
-
-            <div class="col s12 m4 ">
-                <div class="icon-block ">
-                    <h2 class="center blue-text darken-3 "><i class="fas fa-rocket "></i></h2>
-                    <h5 class="center bold-text">Lightweight gameplay experience</h5>
-
-                    <p class="light ">We provide best gameplay experience compared to other community servers, without distraction or bloats such as in-game cosmetics and advertisements.</p>
-                </div>
-            </div>
-
-            <div class="col s12 m4 ">
-                <div class="icon-block ">
-                    <h2 class="center blue-text darken-3 "><i class="fas fa-user-friends "></i></h2>
-                    <h5 class="center bold-text">Friendly Community</h5>
-
-                    <p class="light ">Our community follows <a href="https://thelibreproject.github.io">The Libre Project</a>, which includes philosophy when managing community. We have friendly staff members to talk, and listens to your feedback and takes action!</p>
-                </div>
-            </div>
+    <footer class="footer mt-auto py-3 bg-black">
+        <div class="container-fluid center-text">
+            <span class="text-white">Copyright ⓒ 2021 Mystic Moonlight.</span>
         </div>
-        
-        
-        <footer class="page-footer blue darken-1">
-            <div class="container">
-                <div class="row">
-                    <div class="col l4 s12">
-                        <h5 class="white-text bold-text">The Feather Project</h5>
-                        <p class="white-text">Made with <i class="fas fa-heart"></i> by community!</p>
-                        <p class="white-text">Valve, Valve logo, Team Fortress 2, Team Fortress 2 logo, Left 4 Dead, Left 4 Dead logo, Counter-Strike, Counter-Strike logo are trademarks and/or registered trademarks of Valve Corporation. The Feather Project is not sponsored,
-                            endorsed, licensed by, or affiliated with Valve Corporation.</p>
-                    </div>
-                    <div class="col l3 s12">
-                        <h5 class="white-text bold-text">Mystic Moonlight</h5>
-                        <ul>
-                            <li><a class="white-text" href="https://mysticmoonlight.home.blog" target="_blank"><i class="fas fa-globe"></i> Blog</a></li>
-                            <li><a class="white-text" href="https://github.com/MysticMoonlight" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-                            <li><a class="white-text" href="https://twitter.com/StudioMMForever" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
-                            <li><a class="white-text" href="https://discord.gg/mFZsKS2" target="_blank"><i class="fab fa-discord"></i> Discord</a></li>
-                            <li><a class="white-text" href="https://www.patreon.com/mysticmoonlight" target="_blank"><i class="fab fa-patreon"></i> Patreon</a></li>
-                        </ul>
-                    </div>
-                    <div class="col l3 s12">
-                        <h5 class="white-text bold-text">Community</h5>
-                        <ul>
-                            <li><a class="white-text" href="https://featherproj.github.io/servers"><i class="fas fa-server"></i> Server List</a></li>
-                            <li><a class="white-text disabled" href="#"><i class="fas fa-globe"></i> Forum</a></li>
-                            <li><a class="white-text" href="https://github.com/FeatherProj" target="_blank"><i class="fas fa-box"></i> Repository</a></li>
-                            <li><a class="white-text" href="https://github.com/FeatherProj/FeatherProj" target="_blank"><i class="fas fa-exclamation-triangle"></i> Issue Tracker</a></li>
-                            
-                        </ul>
-                    </div>
-                    <div class="col l2 s12">
-                        <h5 class="white-text bold-text">Policies</h5>
-                        <ul>
-                            <li><a class="white-text" href="https://featherproj.github.io/rules"><i class="fas fa-book"></i> Community Rules</a></li>
-                            <li><a class="white-text" href="https://featherproj.github.io/terms" target="_blank"><i class="fas fa-gavel"></i> Terms of Services</a></li>
-                            <li><a class="white-text" href="https://featherproj.github.io/privacy" target="_blank"><i class="fas fa-lock"></i> Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright blue darken-3">
-                <div class="container">
-                    Copyright ©
-                    <a href="https://mysticmoonlight.home.blog/"> Mystic Moonlight</a>
-                </div>
-            </div>
-        </footer>
-    </div>
+    </footer>
+    <!-- Load icons -->
+    <script>
+        feather.replace()
+    </script>
 </body>
 
 </html>
